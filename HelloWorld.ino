@@ -4,7 +4,7 @@
 void setup() {
 //put your setup code here, to run once:
   Keyboard.begin();
-  delay(2000);
+  delay(500);
   Keyboard.press(KEY_LEFT_GUI); 
   delay(500);
   Keyboard.press('r');
@@ -12,13 +12,13 @@ void setup() {
   Keyboard.release(KEY_LEFT_GUI);
   Keyboard.release('r');
   delay(500);
-  Keyboard.press(KEY_LEFT_CTRL);
-  delay(200);
-  Keyboard.press(KEY_LEFT_SHIFT);
-  delay(200);
-  Keyboard.release(KEY_LEFT_CTRL);
-  Keyboard.release(KEY_LEFT_SHIFT);
-  delay(200);
+  //Keyboard.press(KEY_LEFT_CTRL);
+  //delay(200);
+  //Keyboard.press(KEY_LEFT_SHIFT);
+  //delay(200);
+  //Keyboard.release(KEY_LEFT_CTRL);
+  //Keyboard.release(KEY_LEFT_SHIFT);
+  //delay(200);
   Keyboard.press(KEY_CAPS_LOCK);
   delay(200);
   Keyboard.release(KEY_CAPS_LOCK);
@@ -27,7 +27,7 @@ void setup() {
   delay(200);
   Keyboard.write(0x0A);
   delay(200);
-  Keyboard.println("echo hello word");
+  Keyboard.println("echo Hello, Word!");
   delay(200);
   Keyboard.write(0x0A);
   delay(200);
